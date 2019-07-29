@@ -11,9 +11,9 @@
           .col
             .title-hide
               h1.title Hello l'm Steven
-              h4.subtitle 這世上沒有困難的事情
-              h4.subtitle 只要有熱誠跟興趣
-              h4.subtitle 就能維持自己向前的動力
+              h4.subtitle 堅持就是
+              h4.subtitle 在堅持不住的時候
+              h4.subtitle 再堅持一下
 </template>
 
 <script>
