@@ -37,21 +37,17 @@
     padding-left: 15px
     margin-right: auto
     margin-left: auto
-  .image-hide
-    opacity: 1
-    transform: translate(0,0)
-    transition: all 1s
-    .image-profile
-      height: 300px
-      width: 300px
-      background-image: url("../assets/profile.jpg")
-      background-size: cover
-      background-position: center center
-      border-radius: 50%
-      border: rgb(255, 255, 255) 10px solid
-      +from($ipad)
-        height: 400px
-        width: 400px
+  .image-profile
+    height: 300px
+    width: 300px
+    background-image: url("../assets/profile.jpg")
+    background-size: cover
+    background-position: center center
+    border-radius: 50%
+    border: rgb(255, 255, 255) 10px solid
+    +from($ipad)
+      height: 400px
+      width: 400px
   .title-hide 
     border-radius: 10px
     padding: 20px
@@ -66,4 +62,15 @@
       font-size: 1.5rem
     >.title:not(.is-spaced) + .subtitle
       margin-top: 0rem
+
+  .image-hide,
+  .title-hide
+    opacity: 0
+    transform: translate(0, -30px)
+    transition: all 1s
+
+  .image-hide.active,
+  .title-hide.active
+    opacity: 1
+    transform: translate(0, 0)
 

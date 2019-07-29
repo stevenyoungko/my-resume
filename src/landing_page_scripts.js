@@ -11,6 +11,20 @@ const closeMobileNavMenu = () => {
   document.querySelector('.popup-menu').classList.remove('site-nav-active')
 }
 
+const homeImageAddFadeIn = () => {
+  setTimeout(() => {
+    document.querySelector('.image-hide').classList.add('active')
+  }, 2500)  
+}
+
+const homeTitleAddFadeIn = () => {
+  setTimeout(() => {
+    document.querySelector('.title-hide').classList.add('active')
+  }, 2000)
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   addMobileNavMenuTrigger()
+  homeImageAddFadeIn()
+  homeTitleAddFadeIn()
 })
