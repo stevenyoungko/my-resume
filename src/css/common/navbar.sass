@@ -76,12 +76,12 @@
     background-color: #EDAB00
     opacity: 0.9
     visibility: visible
+    transition: all 0.3s
+    &.site-nav-active
+      left: 0
 
     .popup-menu-list
       padding: 2rem
-      +from($iphone-se)
-        padding-left: 4rem
-
       .popup-menu-item
         color: #fff
         font-size: 1.5rem
@@ -90,7 +90,6 @@
         display: flex
         justify-content: center
         align-items: center
-
         &.is-active
           color: #000
           background-color: #EC744D
@@ -101,10 +100,8 @@
     height: 3.25rem
     transition: all 0.3s
     position: relative
-
     &:hover
       transform: rotate(180deg)
-
     span
       width: 1.5rem
       height: 2px
@@ -112,9 +109,7 @@
       position: absolute
       top: 50%
       left: 50%
-
     span:nth-child(1)
       transform: translate(-50%,-50%) rotate(45deg)
-
     span:nth-child(2)
       transform: translate(-50%,-50%) rotate(-45deg)
