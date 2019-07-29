@@ -5,10 +5,10 @@
     .home-container
       .container
         .row
-          .column.is-half
+          .col
             .image-hide
               .image-profile
-          .column.is-half
+          .col
             .title-hide
               h1.title Hello l'm Steven
               h4.subtitle 這世上沒有困難的事情
