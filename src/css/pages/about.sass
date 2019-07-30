@@ -60,12 +60,12 @@
       height: auto
       margin-bottom: 0
   .about-hide
-    opacity: 1
-    transform: translate(0, 0)
+    opacity: 0
+    transform: translate(0, -30px)
     transition: all 1s
-    // &.active
-    //   opacity: 1
-    //   transform: translate(0, 0)
+    &.active
+      opacity: 1
+      transform: translate(0, 0)
   .my-introduce
     background: rgba(65,65,65,.568)
     border-radius: 10px

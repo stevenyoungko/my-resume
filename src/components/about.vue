@@ -3,7 +3,7 @@
 .about-container#about
   .container
     h1.mt-title About Myself
-    .row.about-hide
+    .row.about-hide(:class="{'active':aboutShow}")
       .col
         img(src="../assets/about.jpg" alt="" class="about-image")
       .col
@@ -20,6 +20,26 @@
 
 <script>
 export default {
+  props: {
+    navLinksH: {
+      type: Object,
+      required: true
+    },
 
+    viewprotH: {
+      type: Number,
+      required: true
+    }
+  },
+
+  computed: {
+    aboutShow() {
+      if (this.viewprotH > (this.navLinksH.about / 2)) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>
