@@ -27,11 +27,11 @@ export default {
 
   mounted() {
     const about = document.querySelector('#about')
-    this.navLinksH.about = about.offsetTop
 
     //紀錄視窗跟元件滾動位置
     window.addEventListener('scroll', ()=> {
       this.viewprotH = window.pageYOffset
+      this.navLinksH.about = about.offsetTop
     })
   }
 }
