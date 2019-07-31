@@ -2,7 +2,7 @@
 <!-- 這裡是 about  -->
 .about-container#about
   .container
-    h1.mt-title About Myself
+    h1.my-title About Myself
     .row.about-hide(:class="{'active':aboutShow}")
       .col
         img(src="../assets/about.jpg" alt="" class="about-image")

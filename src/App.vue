@@ -6,16 +6,19 @@
       <router-view/>
       about(:viewprotH="viewprotH"
             :navLinksH="navLinksH")
+      skill
 </template>
 
 <script>
 import Navbar from './components/navbar'
 import About from './components/about'
+import Skill from './components/skill'
 export default {
   name: 'app',
   components: {
     Navbar,
-    About
+    About,
+    Skill
   },
 
   data() {

@@ -10,10 +10,13 @@
     padding-left: 15px
     margin-right: auto
     margin-left: auto
+    +from($iphone-plus)
+      max-width: 540px
+    +from($ipad-width)
+      max-width: 720px
     +from($ipad)
-      padding-right: 8rem
-      padding-left: 8rem
-  .mt-title
+      max-width: 960px
+  .my-title
     text-align: center
     color: $c-white
     border-bottom: 3px solid $c-white
@@ -41,8 +44,6 @@
     margin-left: -15px
     +from($ipad-width)
       flex-direction: row
-    +from($ipad-pro-width)
-      align-items: center
     .col
       display: flex
       justify-content: center
@@ -73,6 +74,7 @@
     text-shadow: 3px 3px 6px #000
     text-align: left
     padding: 1.5rem
+    width: 100%
     > p
       margin-bottom: 1rem
       font-weight: 600
