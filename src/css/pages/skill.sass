@@ -1,41 +1,5 @@
 .skill-container
-  padding-top: 60px
   background: linear-gradient(#331738, #00264b)
-  background-size: cover
-  background-position: 50%
-  padding-bottom: 180px
-  .container
-    width: 100%
-    padding-right: 15px
-    padding-left: 15px
-    margin-right: auto
-    margin-left: auto
-    +from($iphone-plus)
-      max-width: 540px
-    +from($ipad-width)
-      max-width: 720px
-    +from($ipad-pro-width)
-      max-width: 960px
-  .my-title
-    text-align: center
-    color: $c-white
-    border-bottom: 3px solid $c-white
-    padding: 30px 0
-    margin-bottom: 60px
-    position: relative
-    letter-spacing: 2px
-    text-shadow: 3px 3px 6px #000
-    font-size: 2.5rem
-    font-weight: bold
-    &:before
-      position: absolute
-      left: 50%
-      bottom: 0
-      content: ""
-      height: 15px
-      width: 15px
-      background: #478dbd
-      transform: rotate(45deg) translateY(13px)
   .btn-groups
     display: flex
     justify-content: center
@@ -45,23 +9,10 @@
       display: inline-flex
       vertical-align: middle
   .row
-    display: flex
-    flex-direction: column
-    align-items: center
-    margin-right: -15px
-    margin-left: -15px
     +from($iphone-plus)
       flex-wrap: wrap
       flex-direction: row
-    // +from($ipad-pro-width)
-    //   align-items: center
     .col
-      display: flex
-      justify-content: center
-      position: relative
-      width: 100%
-      padding-right: 15px
-      padding-left: 15px
       +from($iphone-plus)
         flex: 0 0 50%
         max-width: 50%
