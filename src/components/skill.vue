@@ -4,12 +4,12 @@
     h1.my-title Skills
     .btn-groups
       .btn-groups-inner(aria-label="Basic example" role="group")
-        button.button.is-info
-          span.icon
-            i.fa.fa-home
-        button.button.is-primary
-          span.icon
-            i.fa.fa-home
+        button.button.is-info.is-large
+          span.icon.is-large
+            i.fa.fa-check-square
+        button.button.is-primary.is-large
+          span.icon.is-large
+            i.fa.fa-list
     .row
       .col
         .flip-card
