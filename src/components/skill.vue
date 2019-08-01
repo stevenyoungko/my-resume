@@ -82,5 +82,22 @@
             .flip-card-back
               h2.flip-card-title ES6
               p.flip-card-subtitle 了解 Promise 非同步處理
+      .col
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../assets/skill/python.png" alt="Avatar" class="flip-card-image")
+            .flip-card-back
+              h2.flip-card-title Python
+              p.flip-card-subtitle python 爬蟲、爬取網路資料
+      .col
+        .flip-card
+          .flip-card-inner
+            .flip-card-front
+              img(src="../assets/skill/ruby.png" alt="Avatar" class="flip-card-image")
+            .flip-card-back
+              h2.flip-card-title Ruby
+              p.flip-card-subtitle 使用Ruby on rails框架
+              p.flip-card-subtitle 了解MVC架構
 
 </template>
