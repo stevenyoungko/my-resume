@@ -30,27 +30,27 @@ const homeTitleAddFadeIn = () => {
   }, 2000)
 }
 
-const SmoothScrollTo =() => {
-  const buttons = document.querySelectorAll('[data-scroll-to]')
+// const SmoothScrollTo =() => {
+//   const buttons = document.querySelectorAll('[data-scroll-to]')
 
-  buttons.forEach(function(element) {
+//   buttons.forEach(function(element) {
 
-    element.addEventListener('click', event => {
-      let target = event.currentTarget.dataset.scrollTo
-      let offset = document.querySelector(target).offsetTop
+//     element.addEventListener('click', event => {
+//       let target = event.currentTarget.dataset.scrollTo
+//       let offset = document.querySelector(target).offsetTop
 
-      window.scroll({
-        top: offset,
-        behavior: "smooth"
-      })
-    })
-  })
-}
+//       window.scroll({
+//         top: offset,
+//         behavior: "smooth"
+//       })
+//     })
+//   })
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   addMobileNavMenuTrigger()
   popupMenuTrigger()
   homeImageAddFadeIn()
   homeTitleAddFadeIn()
-  SmoothScrollTo()
+  // SmoothScrollTo()
 })

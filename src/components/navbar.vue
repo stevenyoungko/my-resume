@@ -13,21 +13,21 @@ nav.navbar(role='navigation', aria-label='main navigation')
         span
         span
       ul.popup-menu-list
-        li.popup-menu-item(href="#about" data-scroll-to="#about") About
-        li.popup-menu-item(href="#skill" data-scroll-to="#skill") Skills
-        li.popup-menu-item(href="#works" data-scroll-to="#works") Projects
-        li.popup-menu-item(href="#experience" data-scroll-to="#experience") Experience
-        li.popup-menu-item(href="#contact" data-scroll-to="#experience") Contact
+        li.popup-menu-item(href="#about" v-scroll-to="'#about'") About
+        li.popup-menu-item(href="#skill" v-scroll-to="'#skill'") Skills
+        li.popup-menu-item(href="#works" v-scroll-to="'#works'") Projects
+        li.popup-menu-item(href="#experience" v-scroll-to="'#experience'") Experience
+        li.popup-menu-item(href="#contact" v-scroll-to="'#contact'") Contact
   ul.navbar-menu
-    li.navbar-item(href="#about" data-scroll-to="#about") About
+    li.navbar-item(href="#about" v-scroll-to="'#about'") About
       .line
-    li.navbar-item(href="#skill" data-scroll-to="#skill") Skills
+    li.navbar-item(href="#skill" v-scroll-to="'#skill'") Skills
       .line
-    li.navbar-item(href="#works" data-scroll-to="#works") Projects
+    li.navbar-item(href="#works" v-scroll-to="'#works'") Projects
       .line
-    li.navbar-item(href="#experience" data-scroll-to="#experience") Experience
+    li.navbar-item(href="#experience" v-scroll-to="'#experience'") Experience
       .line
-    li.navbar-item(href="#contact" data-scroll-to="#contact") Contact
+    li.navbar-item(href="#contact" v-scroll-to="'#contact'") Contact
       .line
 </template>
 
