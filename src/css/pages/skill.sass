@@ -18,7 +18,14 @@
     +from($iphone-plus)
       flex-wrap: wrap
       flex-direction: row
-    .col
+    .col-list
+      flex-direction: column
+      color: $c-white
+      text-align: left
+      +from($ipad-width)
+        flex: 0 0 66.66667%
+        max-width: 66.66667%
+    .col-gallery
       +from($iphone-plus)
         flex: 0 0 50%
         max-width: 50%
@@ -28,6 +35,17 @@
       +from($ipad-pro)
         flex: 0 0 25%
         max-width: 25%
+      >.title
+        padding: 20px 0 10px 0
+        margin-bottom: 0.5rem
+        width: 100%
+  .skill-list
+    margin-bottom: 1rem
+    padding-left: 40px
+    list-style: disc
+    .skill-item
+      padding: 5px
+      font-size: 20px
 
 .flip-card
   margin: 20px 0
