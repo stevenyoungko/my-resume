@@ -145,7 +145,7 @@
 export default {
   data() {
     return{
-      skillDispaly: 'list'
+      skillDispaly: 'gallery'
     }
   }
 }
