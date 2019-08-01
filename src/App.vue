@@ -7,18 +7,21 @@
       about(:viewprotH="viewprotH"
             :navLinksH="navLinksH")
       skill
+      project
 </template>
 
 <script>
 import Navbar from './components/navbar'
 import About from './components/about'
 import Skill from './components/skill'
+import Project from './components/project'
 export default {
   name: 'app',
   components: {
     Navbar,
     About,
-    Skill
+    Skill,
+    Project
   },
 
   data() {

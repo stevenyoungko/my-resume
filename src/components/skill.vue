@@ -1,4 +1,5 @@
 <template lang="pug">
+<!-- 這裡是 skill  -->
 .skill-container#skill
   .container
     h1.my-title Skills
