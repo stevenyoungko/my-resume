@@ -3,6 +3,13 @@ const addMobileNavMenuTrigger = () => {
   document.querySelector('[data-behavior="nav-menu-close-button"]').addEventListener('click', closeMobileNavMenu)
 }
 
+const popupMenuTrigger = () => {
+  let buttons = document.querySelectorAll('.popup-menu-item')
+  buttons.forEach(function (button) {
+    button.addEventListener('click', closeMobileNavMenu)
+  })
+}
+
 const openMobileNavMenu = () => {
   document.querySelector('.popup-menu').classList.toggle('site-nav-active')
 }
@@ -42,6 +49,7 @@ const SmoothScrollTo =() => {
 
 document.addEventListener("DOMContentLoaded", () => {
   addMobileNavMenuTrigger()
+  popupMenuTrigger()
   homeImageAddFadeIn()
   homeTitleAddFadeIn()
   SmoothScrollTo()
