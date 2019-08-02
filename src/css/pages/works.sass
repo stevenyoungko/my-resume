@@ -1,6 +1,7 @@
 .works-container
   background: linear-gradient(to right bottom, rgb(0, 38, 75), rgb(51, 23, 56))
   min-height: 100vh
+  position: relative
   .transform_3d
     perspective: 1200px
     padding: 40px 10px
@@ -20,3 +21,9 @@
     padding: 1.5rem 0
     color: $c-white
     font-size: 1.75rem
+  .particles-js-canvas-el
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    z-index: 0

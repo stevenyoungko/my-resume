@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
+import VueParticles from 'vue-particles'
 import App from './App.vue'
 import router from './router.js'
 import './css/application.css.sass'
@@ -27,6 +28,7 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
+Vue.use(VueParticles)
 
 new Vue({
   router,
