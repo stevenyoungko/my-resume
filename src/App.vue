@@ -8,6 +8,7 @@
             :navLinksH="navLinksH")
       skill
       project
+      contact
 </template>
 
 <script>
@@ -15,13 +16,15 @@ import Navbar from './components/navbar'
 import About from './components/about'
 import Skill from './components/skill'
 import Project from './components/project'
+import Contact from './components/contact'
 export default {
   name: 'app',
   components: {
     Navbar,
     About,
     Skill,
-    Project
+    Project,
+    Contact
   },
 
   data() {
@@ -33,11 +36,13 @@ export default {
 
   mounted() {
     const about = document.querySelector('#about')
+    // const contact = document.querySelector('#contact')
 
     //紀錄視窗跟元件滾動位置
     window.addEventListener('scroll', ()=> {
       this.viewprotH = window.pageYOffset
       this.navLinksH.about = about.offsetTop
+      // this.navLinksH.contact = contact.offsetTop
     })
   }
 }
