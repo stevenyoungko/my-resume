@@ -2,7 +2,8 @@
   #app
     .pages-index
       .bg-image
-      navbar
+      navbar(:viewprotH="viewprotH"
+             :navLinksH="navLinksH")
       <router-view/>
       about(:viewprotH="viewprotH"
             :navLinksH="navLinksH")
@@ -39,6 +40,8 @@ export default {
 
   mounted() {
     const about = document.querySelector('#about')
+    const skill = document.querySelector('#skill')
+    const works = document.querySelector('#works')
     const contact = document.querySelector('#contact')
     this.windowH = window.outerHeight
 
@@ -46,6 +49,8 @@ export default {
     window.addEventListener('scroll', ()=> {
       this.viewprotH = window.pageYOffset
       this.navLinksH.about = about.offsetTop
+      this.navLinksH.skill = skill.offsetTop
+      this.navLinksH.works = works.offsetTop
       this.navLinksH.contact = contact.offsetTop
     })
 

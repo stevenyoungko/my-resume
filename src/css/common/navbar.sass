@@ -66,10 +66,6 @@
         transition: all 0.5s
         transform: translateX(-50%)
         left: 50%
-      &:hover 
-        background-color: hsla(0,0%,4%,.8)
-        .line
-          width: 80%
 
   .popup-menu
     position: fixed
@@ -87,13 +83,17 @@
     .popup-menu-list
       padding: 2rem
       .popup-menu-item
-        color: $c-white
-        font-size: 1.5rem
+        color: $c-black
+        font-size: 2rem
         margin-bottom: 2rem
+        font-weight: bold
         height: 3rem
         display: flex
         justify-content: center
         align-items: center
+        &.active
+          color: #000
+          background-color: #EC744D
 
   .popup-menu-close
     cursor: pointer
