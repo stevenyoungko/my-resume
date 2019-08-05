@@ -4,7 +4,7 @@
   .container
     .row
       .col
-        .contact-card
+        .contact-card(:class="{'active':contactShow}")
           h1.title Contact Me
           .row
             .col
@@ -31,26 +31,31 @@
 
 <script>
 export default {
-  // porps: {
-  //   navLinksH: {
-  //     type: Object,
-  //     required: true
-  //   },
+  props: {
+    navLinksH: {
+      type: Object,
+      required: true
+    },
 
-  //   viewprotH: {
-  //     type: Number,
-  //     required: true
-  //   }
-  // },
-  
-  // computed: {
-  //   contactShow() {
-  //     if (this.viewprotH > (this.navLinksH.contact / 2)) {
-  //       return true
-  //     } else {
-  //       return false
-  //     }
-  //   }
-  // }
+    viewprotH: {
+      type: Number,
+      required: true
+    },
+
+    windowH: {
+      type: Number,
+      required: true
+    }
+  },
+
+  computed: {
+    contactShow() {
+      if (this.viewprotH > (this.navLinksH.contact - this.windowH / 2)) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>

@@ -8,7 +8,9 @@
             :navLinksH="navLinksH")
       skill
       project
-      contact
+      contact(:viewprotH="viewprotH"
+              :navLinksH="navLinksH"
+              :windowH="windowH")
 </template>
 
 <script>
@@ -30,20 +32,27 @@ export default {
   data() {
     return {
       viewprotH: 0,
+      windowH: 0,
       navLinksH: {}
     }
   },
 
   mounted() {
     const about = document.querySelector('#about')
-    // const contact = document.querySelector('#contact')
+    const contact = document.querySelector('#contact')
+    this.windowH = window.outerHeight
 
     //紀錄視窗跟元件滾動位置
     window.addEventListener('scroll', ()=> {
       this.viewprotH = window.pageYOffset
       this.navLinksH.about = about.offsetTop
-      // this.navLinksH.contact = contact.offsetTop
+      this.navLinksH.contact = contact.offsetTop
     })
+
+    //紀錄視窗寬度
+    window.addEventListener("resize",  ()=> {
+      this.windowH = window.outerHeight;
+    });
   }
 }
 </script>
