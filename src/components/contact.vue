@@ -21,11 +21,9 @@
               i.fa.fa-phone
             | 0908162589
           a(href="https://www.facebook.com/profile.php?id=100002424888068&ref=bookmarks" target="_blank")
-            span.icon
-              i.fab.fa-facebook
+            i.fab.fa-facebook
           a(href="https://github.com/stevenyoungko/my-resume" target="_blank")
-            span.icon
-              i.fab.fa-github
+            i.fab.fa-github
 
 </template>
 
