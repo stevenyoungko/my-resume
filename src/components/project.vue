@@ -43,7 +43,7 @@ export default {
       openModalisActive: false,
       works: [{
         title: '新悅辦公家具',
-        imgURL: '/img/shinyue.f11cdeb3.png',
+        imgURL: require('../assets/project/shinyue.png'),
         href: 'https://shinyue.odd.tw/',
         content: [
           '使用後端框架 Ruby on rails',
